@@ -1,61 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu | My Portfolio</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: lightblue;
+            background: linear-gradient(135deg, #dbeafe, #e9d5ff, #fce7f3);
             font-family: Arial, sans-serif;
             text-align: center;
+            margin: 0;
+            padding: 40px 15px;
+            min-height: 100vh;
         }
 
-        h1 {
-            color: darkblue;
-        }
-
-        p {
-            color: darkslategray;
-            font-size: 18px;
-        }
         .profile-card {
-    background-color: white;
-    max-width: 400px;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px gray;
-}
+            background-color: white;
+            max-width: 420px;
+            margin: 40px auto;
+            padding: 35px 25px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(80, 50, 120, 0.18);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-.profile-card h1 {
-    color: purple;
-}
+        .profile-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 35px rgba(80, 50, 120, 0.25);
+        }
 
-.profile-card h2 {
-    color: darkblue;
-}
+        .profile-card h1 {
+            color: #7c3aed;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
 
-.profile-card button {
-    background-color: purple;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-}
+        .profile-card h2 {
+            color: #2563eb;
+            font-size: 21px;
+        }
+
+        .profile-card p {
+            color: #475569;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .profile-card button {
+            background: linear-gradient(90deg, #7c3aed, #ec4899);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 13px 28px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 12px;
+            transition: transform 0.2s;
+        }
+
+        .profile-card button:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            color: #475569;
+            font-size: 14px;
+            margin-top: 30px;
+        }
     </style>
-
 </head>
+
 <body>
     <div class="profile-card">
-    <h1>Hi, I'm Priyanshu!</h1>
-    <h2>BSc IT Student</h2>
-    <p>I am learning web development and building my first website.</p>
-    <button>Contact Me</button>
-</div>
-    <h1>Hello, World!</h1>
-    <h2>My name is Priyanshu</h2>
-    <p>I am a BSc IT student.</p>
-    <p>I am learning web development.</p>
+        <h1>Hi, I'm Priyanshu! 👋</h1>
+        <h2>BSc IT Student</h2>
+
+        <p>
+            Welcome to my personal website!
+            I am learning programming and web development.
+            This is my first portfolio project.
+        </p>
+
+        <button onclick="alert('Thank you for visiting my website!')">
+            Say Hello!
+        </button>
+    </div>
+
+    <footer>
+        Made with ❤️ by Priyanshu
+    </footer>
 </body>
 </html>
